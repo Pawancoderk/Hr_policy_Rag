@@ -13,4 +13,4 @@ def load_document(file_path: str = config.DATA_FILE_PATH):
     loader = TextLoader(file_path, encoding="utf-8")
     documents = loader.load()
     logger.info("Loaded %d document(s)", len(documents))
-    return documents
+    return documents  
