@@ -1,0 +1,4 @@
+2026-09-05 11:24:09,174 | INFO | hr_assistant.document_loader | Loading document from 'data\hr_policy.txt'
+2026-09-05 11:24:09,176 | INFO | hr_assistant.document_loader | Loaded 1 document(s)
+2026-09-05 11:24:09,176 | INFO | hr_assistant.splitter | Split document(s) into 9 chunk(s)
+2026-09-05 11:24:09,176 | INFO | hr_assistant.embedding | Initializing embeddings model 'jina-embeddings-v2-base-en'

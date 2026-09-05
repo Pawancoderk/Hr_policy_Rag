@@ -1,0 +1,6 @@
+2026-09-05 12:23:07,537 | INFO | hr_assistant.embedding | Initializing embeddings model 'jina-embeddings-v2-base-en'
+2026-09-05 12:23:07,541 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-09-05 12:23:07,546 | INFO | faiss.loader | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-05 12:23:07,546 | INFO | faiss.loader | Loading faiss.
+2026-09-05 12:23:07,657 | INFO | faiss.loader | Successfully loaded faiss.

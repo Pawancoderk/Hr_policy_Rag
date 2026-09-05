@@ -1,0 +1,9 @@
+2026-09-05 12:22:36,473 | INFO | hr_assistant.document_loader | Loading document from 'data\hr_policy.txt'
+2026-09-05 12:22:36,473 | INFO | hr_assistant.document_loader | Loaded 1 document(s)
+2026-09-05 12:22:36,483 | INFO | hr_assistant.splitter | Split document(s) into 9 chunk(s)
+2026-09-05 12:22:36,483 | INFO | hr_assistant.embedding | Initializing embeddings model 'jina-embeddings-v2-base-en'
+2026-09-05 12:22:41,449 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-09-05 12:22:41,449 | INFO | faiss.loader | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-05 12:22:41,449 | INFO | faiss.loader | Loading faiss.
+2026-09-05 12:22:41,563 | INFO | faiss.loader | Successfully loaded faiss.
