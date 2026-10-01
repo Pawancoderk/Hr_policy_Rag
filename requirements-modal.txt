@@ -1,0 +1,13 @@
+python-dotenv
+langchain
+langchain-core
+langchain-community
+langchain-groq
+langchain-text-splitters
+langchain-qdrant
+qdrant-client
+langchain-openai
+portkey-ai
+langsmith
+openevals
+fastapi[standard]
