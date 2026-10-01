@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>HR Policy Assistant</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231F6F5C'/%3E%3Cpath d='M10 8h9a3 3 0 0 1 3 3v13H13a3 3 0 0 1-3-3V8z' fill='none' stroke='white' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+
+    <aside class="rail">
+      <div class="brand">
+        <span class="mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h9a3 3 0 0 1 3 3v13H10a3 3 0 0 1-3-3V4z"/><path d="M11 9h5M11 13h5"/></svg>
+        </span>
+        <div>
+          <h1>HR Policy Assistant</h1>
+          <p>Answers come from your company's policy document.</p>
+        </div>
+      </div>
+
+      <p class="rail-title" id="topics-label">Policy topics</p>
+      <nav class="topics" aria-labelledby="topics-label">
+        <button type="button" class="topic" data-question="How many days of paid annual leave do I get per year?">
+          <span class="topic-name">Annual leave</span>
+          <span class="topic-q">How many days of paid annual leave do I get per year?</span>
+        </button>
+        <button type="button" class="topic" data-question="How many paid sick days do I get per year?">
+          <span class="topic-name">Sick leave</span>
+          <span class="topic-q">How many paid sick days do I get per year?</span>
+        </button>
+        <button type="button" class="topic" data-question="How many days per week can I work from home?">
+          <span class="topic-name">Work from home</span>
+          <span class="topic-q">How many days per week can I work from home?</span>
+        </button>
+        <button type="button" class="topic" data-question="How long is the probation period?">
+          <span class="topic-name">Probation</span>
+          <span class="topic-q">How long is the probation period?</span>
+        </button>
+        <button type="button" class="topic" data-question="What is the standard notice period for resignation?">
+          <span class="topic-name">Notice period</span>
+          <span class="topic-q">What is the standard notice period for resignation?</span>
+        </button>
+        <button type="button" class="topic" data-question="Within how many days must reimbursement claims be submitted?">
+          <span class="topic-name">Reimbursement</span>
+          <span class="topic-q">Within how many days must reimbursement claims be submitted?</span>
+        </button>
+        <button type="button" class="topic" data-question="How many public holidays does the company observe each year?">
+          <span class="topic-name">Public holidays</span>
+          <span class="topic-q">How many public holidays does the company observe each year?</span>
+        </button>
+        <button type="button" class="topic" data-question="Within how many days is full and final settlement processed after the last working day?">
+          <span class="topic-name">Exit process</span>
+          <span class="topic-q">Within how many days is full and final settlement processed after the last working day?</span>
+        </button>
+      </nav>
+    </aside>
+
+    <main class="chat">
+      <header class="chat-bar">
+        <button type="button" id="evaluate" class="ghost">Run evaluation</button>
+        <button type="button" id="clear" class="ghost">New conversation</button>
+        <button type="button" id="theme" class="ghost">Dark mode</button>
+      </header>
+
+      <section id="log" class="log" role="log" aria-live="polite" aria-label="Conversation">
+        <div id="empty" class="empty">
+          <h2>What would you like to know about company policy?</h2>
+          <p>Pick a topic or type your own question. I only answer from the HR policy document, and I'll say so when it doesn't cover something.</p>
+        </div>
+      </section>
+
+      <form id="composer" class="composer" autocomplete="off">
+        <label for="input" class="sr-only">Your question</label>
+        <textarea id="input" rows="1" maxlength="1000" placeholder="Ask about leave, work from home, notice period"></textarea>
+        <button type="submit" id="send" class="send" aria-label="Send question" disabled>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        </button>
+      </form>
+      <p class="fine">Answers can be wrong. For decisions that matter, confirm with HR.</p>
+    </main>
+
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
